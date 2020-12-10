@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        .content {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 15%;
+        }
+        .header {
+            margin-left: 15%;
+        }
+            
+        </style>
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+    crossorigin="anonymous">
+    <body>
+        <div class="header">
+            <h1>Rejestracja</h1>
+        </div>
+        <div class="content">
+
+            <form>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label for="firstName" class="form-label">Imię</label>
+                        <input type="text" class="form-control" id="firstNamel" placeholder="Wpisz imię"required>
+                      </div>
+
+                    <div class="col-12">
+                        <label for="lastName" class="form-label">Nazwisko</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko" required>
+                      </div>
+                    <div>
+                        <fieldset class="row mb-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                            <div class="col-sm-10">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Kobieta
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Mężczyzna
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label">Addres email</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Wpisz adres email"required>
+                      </div>
+                    <div class="col-12">
+                        <label for="inputPassword" class="form-label">Hasło</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Hasło" required >
+                      </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Miasto</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                      </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Województwo</label>
+                        <select id="inputState" class="form-select">
+                          <option value="" disabled selected>Wybierz...</option>
+                          <option>mazowieckie</option>
+                          <option>pomorskie</option>
+                        </select>
+                      </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Kod pocztowy</label>
+                        <input type="text" class="form-control" id="inputZip" required 
+                        minlength="6" maxlength="6" pattern="[0-6]{2}-[0-6]{3}">
+                      </div>
+                    <div class="col-md-6">
+                        <input type="checkbox" name="Regulamin" id="reg">
+                        <label for="reg">Akceptuje regulamin</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Informacje marketingowe" id="info" checked>
+                        <label for="reg">Wyrażam zgodę na otrzymywanie informacji marketingowych</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Wyślij</button>  
+            </form>
+        </div> 
+ 
+    </body>
+</html>        
